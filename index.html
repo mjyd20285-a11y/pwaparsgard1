@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parsgard PWA</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <a href="https://www.parsgard.ir">ورود به
+    پارس گرد</a>
+
+    <script>
+        // ثبت سرویس ورکر برای فعال شدن قابلیت PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(() => );
+        }
+    </script>
+</body>
+</html>
